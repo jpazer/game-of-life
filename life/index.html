@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Game of Life</title>
+	<style>
+		@font-face {
+		    font-family: 'exoregular';
+		    src: url('utilities/exo-regular-webfont.eot');
+		    src: url('utilities/exo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('utilities/exo-regular-webfont.woff2') format('woff2'),
+		         url('utilities/exo-regular-webfont.woff') format('woff'),
+		         url('utilities/exo-regular-webfont.ttf') format('truetype'),
+		         url('utilities/exo-regular-webfont.svg#exoregular') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+		body{
+			max-width: 720px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: black;
+		}		
+		#mainCanvas{
+			background: black;
+			border: 1px white solid;
+			z-index: 0;
+			position: absolute;
+		}
+		#topCanvas{
+			background: rgb(0,0,0,0);
+			position: absolute;
+			z-index: 1;
+			border: 1px white solid;
+		}
+		label{
+			color: white;
+			margin-top: 600px;
+			font: 16px 'exoregular';
+		}
+		button{
+			margin-top: 600px;
+			border-radius: 0px;
+			background: white;
+			font: 12px 'exoregular';
+			border: none;
+		}
+
+	</style>
+    
+</head>
+
+<body>
+	<canvas id="mainCanvas"></canvas>
+	<canvas id="topCanvas"></canvas>
+	<br>
+	<button id="playButton" title="Run Simulation">Play</button>
+	<button id="pauseButton" title="Pause Simulation">Pause</button>
+	<button id="clearButton" title="Reset Cell States">Clear</button>
+	<button id="helpButton" title="Instructions">Help</button>
+	<label id="stateLabel">  : PAUSED : Instructions</label>
+	
+
+	<script src='js/loader.js'></script>
+	<script src='js/main.js'></script>
+	<script src='js/Cell.js'></script>
+	<script src='js/Pattern.js'></script>
+	<script src='js/utilities.js'></script>
+</body>
+</html>
