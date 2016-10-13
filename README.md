@@ -1,5 +1,5 @@
 # game-of-life
-Conway's Game of Life Simulator
+Conway’s Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.
 
 <p>Try it here: http://jasminepazer.com/projects/life/</p>
 
